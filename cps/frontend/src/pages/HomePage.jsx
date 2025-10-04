@@ -72,10 +72,9 @@ export const HomePage = () => {
             experiences:
           </p>
           <ul className="m-0 pl-4.5 text-gray-600">
-            <li>normal → welcome@cpsacademy.com / password123</li>
-            <li>student → student@cpsacademy.com / password123</li>
-            <li>social-manager → smm@cpsacademy.com / password123</li>
-            <li>developer → dev@cpsacademy.com / password123</li>
+            <li>normal → welcome@cpsacademy.com / Password123!</li>
+            <li>student → student@cpsacademy.com / Password123!</li>
+            <li>developer → dev@cpsacademy.com / Password123!</li>
           </ul>
         </section>
       )}

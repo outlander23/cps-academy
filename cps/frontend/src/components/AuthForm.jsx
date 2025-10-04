@@ -14,7 +14,7 @@ export const AuthForm = ({ mode = "login" }) => {
     password: "",
     role: "normal",
   });
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false); /*  */
   const [error, setError] = useState(null);
 
   const handleChange = (event) => {
