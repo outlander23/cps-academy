@@ -71,13 +71,41 @@ curl -X POST http://localhost:4000/api/auth/login \
 ### Courses (Protected)
 
 - `GET /api/courses` — List courses accessible to the authenticated user's role
-- `GET /api/courses/:courseId` — Get detailed course info with modules/classes
+- `GET /api/courses/:courseId` — Get detailed course info with modules/classes (supports Mongo `_id` or course `slug`)
+- `POST /api/courses` — **Developer only**. Create a new course with modules, topics, and class recordings.
+- `PATCH /api/courses/:courseId` — **Developer only**. Update course metadata, modules, or classes (slug recalculates if the title changes).
+- `DELETE /api/courses/:courseId` — **Developer only**. Permanently remove a course.
 
 **Example:**
 
 ```bash
 curl http://localhost:4000/api/courses \
   -H "Authorization: Bearer YOUR_JWT_TOKEN"
+```
+
+```bash
+# Developer-only example
+curl -X POST http://localhost:4000/api/courses \
+  -H "Authorization: Bearer DEV_JWT_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "title": "Design Systems Mastery",
+    "description": "Build scalable component libraries and governance workflows.",
+    "audience": ["developer"],
+    "modules": [
+      {
+        "title": "Design Tokens Kickoff",
+        "topics": ["Token Types", "Automation"],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 45,
+            "recordingUrl": "https://www.youtube.com/watch?v=fZ2JKUy1jwg"
+          }
+        ]
+      }
+    ]
+  }'
 ```
 
 ## Project Structure
@@ -114,6 +142,7 @@ backend/
 ### Course Model
 
 - Title & Description
+- Slug (generated from title, used in URLs)
 - Audience (array of roles)
 - Modules (embedded subdocuments)
   - Title, Topics (array)
@@ -122,12 +151,12 @@ backend/
 
 ## Role-Based Access
 
-Courses are filtered by user role:
+Courses are filtered by user role and only developers can curate the catalog:
 
 - **Normal User**: UX Fundamentals, Brand Storytelling
 - **Student**: UX Fundamentals, Modern Web Platform
 - **Social Media Manager**: UX Fundamentals, Brand Storytelling
-- **Developer**: UX Fundamentals, Modern Web Platform
+- **Developer**: UX Fundamentals, Modern Web Platform (plus full create/update/delete access)
 
 ## Environment Variables
 

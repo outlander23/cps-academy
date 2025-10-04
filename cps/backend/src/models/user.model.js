@@ -1,7 +1,14 @@
 import mongoose from "mongoose";
 import bcrypt from "bcrypt";
 
-export const USER_ROLES = ["normal", "student", "social-manager", "developer"];
+export const USER_ROLES = Object.freeze({
+  NORMAL: "normal",
+  STUDENT: "student",
+  SOCIAL_MANAGER: "social_manager",
+  DEVELOPER: "developer",
+});
+
+const USER_ROLE_VALUES = Object.values(USER_ROLES);
 
 const userSchema = new mongoose.Schema(
   {
@@ -20,8 +27,8 @@ const userSchema = new mongoose.Schema(
     },
     role: {
       type: String,
-      enum: USER_ROLES,
-      default: "normal",
+      enum: USER_ROLE_VALUES,
+      default: USER_ROLES.NORMAL,
     },
     passwordHash: {
       type: String,
