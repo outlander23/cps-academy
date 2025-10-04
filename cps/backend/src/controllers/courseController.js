@@ -7,12 +7,33 @@ import {
   getCoursesForRole,
   updateCourse as updateCourseService,
 } from "../services/courseService.js";
+import { Course } from "../models/course.model.js";
+
+import APIFeatures from "../utils/apiFeatures.js";
 
 export const listCourses = catchAsync(async (req, res) => {
   const role = req.user.role;
-  const data = await getCoursesForRole(role);
-  const courses = data.map((course) => course.toJSON());
-  return res.json({ courses });
+
+  const baseQuery = Course.find({ audience: role });
+
+  const features = new APIFeatures(baseQuery, req.query, [])
+    .filter()
+    .sort()
+    .limitFields()
+    .pagination();
+
+  const courses = await features.query;
+
+  res.json({
+    page: req.query.page * 1 || 1,
+    limit: req.query.limit * 1 || 10,
+    count: courses.length,
+    courses: courses.map((c) => ({
+      id: c.id,
+      title: c.title,
+      description: c.description,
+    })),
+  });
 });
 
 export const getCourseDetail = catchAsync(async (req, res) => {
