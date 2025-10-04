@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 import bcrypt from "bcrypt";
 
-export const USER_ROLES = ["normal", "student", "social_manager", "developer"];
+export const USER_ROLES = ["normal", "student", "social-manager", "developer"];
 
 const userSchema = new mongoose.Schema(
   {

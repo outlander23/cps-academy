@@ -8,14 +8,19 @@ import {
   verifyPassword,
 } from "../services/userService.js";
 
-const allowedRoles = USER_ROLES;
-
 export const register = catchAsync(async (req, res) => {
   const { name, email, password } = req.body;
 
   if (!name || !email || !password) {
     throw new AppError("Name, email, and password are required", 400);
   }
+
+  // if (role && !allowedRoles.includes(role)) {
+  //   throw new AppError(
+  //     `Invalid role. Allowed roles: ${allowedRoles.join(", ")}`,
+  //     400
+  //   );
+  // }
 
   const existingUser = await findUserByEmail(email);
   if (existingUser) {
