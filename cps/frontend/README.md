@@ -1,16 +1,29 @@
-# React + Vite
+# CPS Academy Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Modern React interface for the CPS Academy API. It ships with role-based authentication, course browsing for learners, and a developer-only catalog management view.
 
-Currently, two official plugins are available:
+## Getting started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
-## React Compiler
+The application expects the backend to run locally on port `4000`. To point at another origin set `VITE_API_URL` in an `.env` file (for example `VITE_API_URL=https://cps-api.example.com`).
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Available scripts
 
-## Expanding the ESLint configuration
+- `npm run dev` – start Vite in development mode with hot reloading
+- `npm run build` – create a production build
+- `npm run preview` – preview the production build locally
+- `npm run lint` – run ESLint against the source files
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Feature tour
+
+- **Authentication** – register or log in, with JWT stored in local storage and auto-attached to API requests
+- **Role-aware catalog** – only courses matching your role appear, each with modules, topics, and class recordings
+- **Developer workspace** – create, update, and delete courses with a guided form that mirrors the backend schema
+- **Polished UI** – responsive layout, animated loaders, inline alerts, and toast notifications for state feedback
+
+To explore different experiences quickly, log in with the seeded credentials listed in the backend README (normal, student, social-manager, developer).

@@ -4,7 +4,7 @@ import bcrypt from "bcrypt";
 export const USER_ROLES = Object.freeze({
   NORMAL: "normal",
   STUDENT: "student",
-  SOCIAL_MANAGER: "social_manager",
+  SOCIAL_MANAGER: "social-manager",
   DEVELOPER: "developer",
 });
 

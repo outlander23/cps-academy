@@ -32,6 +32,9 @@ export const listCourses = catchAsync(async (req, res) => {
       id: c.id,
       title: c.title,
       description: c.description,
+      slug: c.slug,
+      audience: c.audience,
+      moduleCount: c.modules?.length ?? 0,
     })),
   });
 });
