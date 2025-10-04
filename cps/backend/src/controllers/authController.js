@@ -1,42 +1,53 @@
-import jwt from "jsonwebtoken";
-import { TOKEN_EXPIRY, JWT_SECRET } from "../config.js";
-import { findUserByEmail, verifyPassword } from "../services/userService.js";
+import AppError from "../utils/appError.js";
+import catchAsync from "../utils/catchAsync.js";
+import { sendAuthResponse } from "../utils/auth.js";
+import { USER_ROLES } from "../models/user.model.js";
+import {
+  createUser,
+  findUserByEmail,
+  verifyPassword,
+} from "../services/userService.js";
 
-export const login = async (req, res) => {
+const allowedRoles = USER_ROLES;
+
+export const register = catchAsync(async (req, res) => {
+  const { name, email, password } = req.body;
+
+  if (!name || !email || !password) {
+    throw new AppError("Name, email, and password are required", 400);
+  }
+
+  const existingUser = await findUserByEmail(email);
+  if (existingUser) {
+    throw new AppError("Email already registered", 409);
+  }
+
+  const user = await createUser({
+    name: name.trim(),
+    email,
+    role: "normal",
+    passwordHash: password,
+  });
+
+  return sendAuthResponse(res, user, 201);
+});
+
+export const login = catchAsync(async (req, res) => {
   const { email, password } = req.body;
 
   if (!email || !password) {
-    return res.status(400).json({ message: "Email and password are required" });
+    throw new AppError("Email and password are required", 400);
   }
 
-  const user = findUserByEmail(email);
+  const user = await findUserByEmail(email);
   if (!user) {
-    return res.status(401).json({ message: "Invalid credentials" });
+    throw new AppError("Invalid credentials", 401);
   }
 
-  const isValid = await verifyPassword(password, user.passwordHash);
+  const isValid = await verifyPassword(user, password);
   if (!isValid) {
-    return res.status(401).json({ message: "Invalid credentials" });
+    throw new AppError("Invalid credentials", 401);
   }
 
-  const token = jwt.sign(
-    {
-      sub: user.id,
-      email: user.email,
-      name: user.name,
-      role: user.role,
-    },
-    JWT_SECRET,
-    { expiresIn: TOKEN_EXPIRY }
-  );
-
-  return res.json({
-    token,
-    user: {
-      id: user.id,
-      email: user.email,
-      name: user.name,
-      role: user.role,
-    },
-  });
-};
+  return sendAuthResponse(res, user);
+});

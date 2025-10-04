@@ -1,12 +1,13 @@
 import jwt from "jsonwebtoken";
-import { JWT_SECRET } from "../config.js";
+import { JWT_SECRET } from "../utils/config.js";
+import AppError from "../utils/appError.js";
 
-export const authenticate = (req, res, next) => {
+export const authenticate = (req, _res, next) => {
   const authHeader = req.headers.authorization || "";
   const token = authHeader.startsWith("Bearer ") ? authHeader.slice(7) : null;
 
   if (!token) {
-    return res.status(401).json({ message: "Authentication token missing" });
+    return next(new AppError("Authentication token missing", 401));
   }
 
   try {
@@ -14,15 +15,20 @@ export const authenticate = (req, res, next) => {
     req.user = payload;
     return next();
   } catch (error) {
-    return res.status(401).json({ message: "Invalid or expired token" });
+    return next(new AppError("Invalid or expired token", 401));
   }
 };
 
 export const authorize =
-  (...roles) =>
-  (req, res, next) => {
-    if (!req.user || !roles.includes(req.user.role)) {
-      return res.status(403).json({ message: "Access denied" });
+  (...allowedRoles) =>
+  (req, _res, next) => {
+    if (!req.user) {
+      return next(new AppError("Authentication required", 401));
     }
+
+    if (allowedRoles.length > 0 && !allowedRoles.includes(req.user.role)) {
+      return next(new AppError("Forbidden: insufficient permissions", 403));
+    }
+
     return next();
   };

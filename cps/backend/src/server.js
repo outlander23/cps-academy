@@ -1,33 +1,31 @@
-import express from "express";
-import cors from "cors";
-import morgan from "morgan";
+import { PORT } from "./utils/config.js";
+import { connectDB } from "./database/connect.db.js";
 
-import { PORT } from "./config.js";
-import authRoutes from "./routes/authRoutes.js";
-import courseRoutes from "./routes/courseRoutes.js";
+import app from "./app.js";
+import { createServer } from "http";
 
-const app = express();
+const startServer = async () => {
+  try {
+    await connectDB();
 
-app.use(cors({ origin: "*", credentials: true }));
-app.use(express.json());
-app.use(morgan("dev"));
+    const server = createServer(app);
 
-app.get("/", (_req, res) => {
-  res.json({ message: "CPS Academy API is running" });
-});
+    server.prependListener("request", (req, res) => {
+      res.setHeader("Access-Control-Allow-Origin", "*");
+      res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
+      res.setHeader(
+        "Access-Control-Allow-Headers",
+        "Content-Type, Authorization"
+      );
+    });
 
-app.use("/api/auth", authRoutes);
-app.use("/api/courses", courseRoutes);
+    server.listen(PORT, () => {
+      console.log(`Server is running on port: ${PORT}`);
+    });
+  } catch (error) {
+    console.error("Failed to start the server:", error.message);
+    process.exit(1);
+  }
+};
 
-app.use((req, res) => {
-  res.status(404).json({ message: "Route not found" });
-});
-
-app.use((err, _req, res, _next) => {
-  console.error(err);
-  res.status(500).json({ message: "Internal server error" });
-});
-
-app.listen(PORT, () => {
-  console.log(`API listening on http://localhost:${PORT}`);
-});
+startServer();

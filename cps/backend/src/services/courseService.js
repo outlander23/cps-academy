@@ -1,9 +1,14 @@
-import { courses } from "../data/demoData.js";
+import { Course } from "../models/course.model.js";
 
-export const getCoursesForRole = (role) =>
-  courses.filter((course) => course.audience.includes(role));
+export const getCoursesForRole = async (role) => {
+  return Course.find({ audience: role });
+};
 
-export const getCourseByIdForRole = (courseId, role) =>
-  courses.find(
-    (course) => course.id === courseId && course.audience.includes(role)
-  );
+export const getCourseByIdForRole = async (courseId, role) => {
+  return Course.findOne({ _id: courseId, audience: role });
+};
+
+export const createCourse = async (courseData) => {
+  const course = new Course(courseData);
+  return course.save();
+};

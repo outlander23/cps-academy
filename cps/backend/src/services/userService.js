@@ -1,8 +1,11 @@
-import bcrypt from "bcrypt";
-import { users } from "../data/demoData.js";
+import { User } from "../models/user.model.js";
 
-export const findUserByEmail = (email) =>
-  users.find((user) => user.email.toLowerCase() === email.toLowerCase());
+const normalizeEmail = (email) => email.trim().toLowerCase();
 
-export const verifyPassword = async (password, passwordHash) =>
-  bcrypt.compare(password, passwordHash);
+export const findUserByEmail = async (email) =>
+  User.findOne({ email: normalizeEmail(email) });
+
+export const createUser = async ({ email, ...rest }) =>
+  User.create({ email: normalizeEmail(email), ...rest });
+
+export const verifyPassword = (user, password) => user.verifyPassword(password);
