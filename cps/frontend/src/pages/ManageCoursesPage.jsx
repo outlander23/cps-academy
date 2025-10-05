@@ -113,7 +113,7 @@ export const ManageCoursesPage = () => {
 
   if (loading) {
     return (
-      <div className="bg-white rounded-lg shadow-sm p-6 border border-gray-100 flex justify-center">
+      <div className="backdrop-blur-md bg-white/90 rounded-2xl shadow-lg p-12 border border-gray-200/50 flex justify-center">
         <Loader label="Loading course catalog" />
       </div>
     );
@@ -130,15 +130,19 @@ export const ManageCoursesPage = () => {
   }
 
   return (
-    <div className="grid gap-8">
-      <div className="bg-white rounded-lg shadow-sm p-6 border border-gray-100 grid gap-3">
-        <h2 className="m-0">Curate the course catalog</h2>
-        <p className="m-0 text-gray-600">
+    <div className="space-y-8">
+      {/* Header Section */}
+      <div className="backdrop-blur-md bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl shadow-lg p-8 border border-blue-200/50">
+        <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent mb-3">
+          🎓 Curate the Course Catalog
+        </h2>
+        <p className="text-gray-700 text-lg">
           Manage the experiences available to each role. Updating a title will
           regenerate its slug safely.
         </p>
       </div>
 
+      {/* Courses Table */}
       <CourseTable
         courses={courses}
         onSelect={handleSelectCourse}
@@ -146,18 +150,19 @@ export const ManageCoursesPage = () => {
         deletingId={deletingId}
       />
 
-      <div className="bg-white rounded-lg shadow-sm p-6 border border-gray-100 grid gap-4">
-        <div className="flex justify-between items-center">
-          <h2 className="m-0">
-            {selectedCourse ? "Update course" : "Create new course"}
+      {/* Course Form */}
+      <div className="backdrop-blur-md bg-white/90 rounded-2xl shadow-xl p-8 border border-gray-200/50 space-y-6">
+        <div className="flex justify-between items-center pb-4 border-b border-gray-200">
+          <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
+            {selectedCourse ? <>✏️ Update Course</> : <>✨ Create New Course</>}
           </h2>
           {selectedCourse && (
             <button
               type="button"
-              className="py-2 px-3 rounded-full border-none font-semibold text-sm inline-flex items-center justify-center gap-2 cursor-pointer transition transform hover:-translate-y-0.5 hover:brightness-105 bg-blue-50 text-blue-800 shadow-none"
+              className="py-2.5 px-5 rounded-full border-none font-semibold text-sm inline-flex items-center justify-center gap-2 cursor-pointer transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200 hover:scale-105 shadow-md"
               onClick={resetForm}
             >
-              Reset form
+              ↺ Reset form
             </button>
           )}
         </div>

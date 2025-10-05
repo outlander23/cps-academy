@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import { EyeIcon, EyeSlashIcon } from "@heroicons/react/24/outline"; // Assuming you install @heroicons/react for icons
 import { loginUser, registerUser } from "../api/auth.js";
 import { useAuth } from "../hooks/useAuth.js";
 import { useToast } from "../providers/ToastProvider.jsx";
 
-export const AuthForm = ({ mode = "login" }) => {
+export const AuthForm = ({ mode = "login", onModeSwitch }) => {
   const isRegister = mode === "register";
   const { login } = useAuth();
   const { showToast } = useToast();
@@ -14,12 +15,17 @@ export const AuthForm = ({ mode = "login" }) => {
     password: "",
     role: "normal",
   });
-  const [loading, setLoading] = useState(false); /*  */
+  const [showPassword, setShowPassword] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
     setForm((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
   };
 
   const handleSubmit = async (event) => {
@@ -67,103 +73,170 @@ export const AuthForm = ({ mode = "login" }) => {
   };
 
   return (
-    <form
-      className="bg-white rounded-lg shadow-sm p-6 border border-gray-100 grid gap-4"
-      onSubmit={handleSubmit}
-    >
-      <h2 className="m-0">
-        {isRegister
-          ? "Create your CPS Academy account"
-          : "Log in to CPS Academy"}
-      </h2>
-      <p className="m-0 text-gray-600">
-        {isRegister
-          ? "Pick your role to unlock the right content experience."
-          : "Use the credentials seeded in the backend or your newly created account."}
-      </p>
-
-      {isRegister && (
-        <div className="flex flex-col gap-2">
-          <label htmlFor="name" className="font-semibold text-gray-900">
-            Full name
-          </label>
-          <input
-            id="name"
-            name="name"
-            type="text"
-            placeholder="Ada Lovelace"
-            value={form.name}
-            onChange={handleChange}
-            required
-            className="w-full py-3 px-3.5 rounded-xl border border-gray-300 text-base transition focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 bg-white"
-          />
-        </div>
-      )}
-
-      <div className="flex flex-col gap-2">
-        <label htmlFor="email" className="font-semibold text-gray-900">
-          Email address
-        </label>
-        <input
-          id="email"
-          name="email"
-          type="email"
-          placeholder="you@cpsacademy.com"
-          value={form.email}
-          onChange={handleChange}
-          required
-          className="w-full py-3 px-3.5 rounded-xl border border-gray-300 text-base transition focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 bg-white"
-        />
-      </div>
-
-      <div className="flex flex-col gap-2">
-        <label htmlFor="password" className="font-semibold text-gray-900">
-          Password
-        </label>
-        <input
-          id="password"
-          name="password"
-          type="password"
-          placeholder="••••••••"
-          value={form.password}
-          onChange={handleChange}
-          required
-          className="w-full py-3 px-3.5 rounded-xl border border-gray-300 text-base transition focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 bg-white"
-        />
-      </div>
-
-      {isRegister && (
-        <div className="flex flex-col gap-2">
-          <label htmlFor="role" className="font-semibold text-gray-900">
-            Role
-          </label>
-          <select
-            id="role"
-            name="role"
-            value={form.role}
-            onChange={handleChange}
-            className="w-full py-3 px-3.5 rounded-xl border border-gray-300 text-base transition focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 bg-white"
-          >
-            <option value="normal">Learner (normal)</option>
-            <option value="student">Student</option>
-            <option value="social-manager">Social Manager</option>
-          </select>
-        </div>
-      )}
-
-      {error && (
-        <div className="bg-red-50 text-red-800 rounded-lg p-3 border border-red-200">
-          {error}
-        </div>
-      )}
-
-      <button
-        type="submit"
-        className="py-3 px-4.5 rounded-full border-none font-semibold text-sm inline-flex items-center justify-center gap-2 cursor-pointer transition transform hover:-translate-y-0.5 hover:brightness-105 bg-gradient-to-r from-blue-500 to-blue-600 text-white shadow-lg disabled:opacity-50"
-        disabled={loading}
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-50 p-4 animate-fade-in">
+      <form
+        className="backdrop-blur-lg bg-white/95 rounded-3xl shadow-2xl p-10 max-w-md w-full space-y-8 border border-gray-100/50 transform transition-all duration-500 hover:scale-105"
+        onSubmit={handleSubmit}
       >
-        {loading ? "Just a sec…" : isRegister ? "Create account" : "Log in"}
-      </button>
-    </form>
+        {/* Header */}
+        <div className="text-center space-y-3">
+          <h2 className="text-4xl font-extrabold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent animate-gradient-shift">
+            {isRegister ? "Join CPS Academy" : "Welcome Back"}
+          </h2>
+          <p className="text-gray-500 text-lg">
+            {isRegister
+              ? "Unlock tailored learning paths for your creative tech journey."
+              : "Sign in to continue building your skills."}
+          </p>
+        </div>
+
+        {isRegister && (
+          <div className="relative space-y-1 animate-slide-up">
+            <label
+              htmlFor="name"
+              className="absolute -top-2.5 left-4 bg-white px-2 text-sm font-medium text-gray-600 transition-all duration-200"
+            >
+              Full Name
+            </label>
+            <div className="relative">
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Enter your full name"
+                value={form.name}
+                onChange={handleChange}
+                required
+                className="w-full py-4 pl-12 pr-4 rounded-2xl border-2 border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-300 text-gray-800 placeholder-gray-400 transition-all duration-300 bg-white/50 hover:border-blue-300"
+              />
+              <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-500">
+                👤
+              </span>
+            </div>
+          </div>
+        )}
+
+        <div className="relative space-y-1 animate-slide-up delay-100">
+          <label
+            htmlFor="email"
+            className="absolute -top-2.5 left-4 bg-white px-2 text-sm font-medium text-gray-600 transition-all duration-200"
+          >
+            Email Address
+          </label>
+          <div className="relative">
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Enter your email"
+              value={form.email}
+              onChange={handleChange}
+              required
+              className="w-full py-4 pl-12 pr-4 rounded-2xl border-2 border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-300 text-gray-800 placeholder-gray-400 transition-all duration-300 bg-white/50 hover:border-blue-300"
+            />
+            <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-500">
+              📧
+            </span>
+          </div>
+        </div>
+
+        <div className="relative space-y-1 animate-slide-up delay-200">
+          <label
+            htmlFor="password"
+            className="absolute -top-2.5 left-4 bg-white px-2 text-sm font-medium text-gray-600 transition-all duration-200"
+          >
+            Password
+          </label>
+          <div className="relative">
+            <input
+              id="password"
+              name="password"
+              type={showPassword ? "text" : "password"}
+              placeholder="Enter your password"
+              value={form.password}
+              onChange={handleChange}
+              required
+              className="w-full py-4 pl-12 pr-12 rounded-2xl border-2 border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-300 text-gray-800 placeholder-gray-400 transition-all duration-300 bg-white/50 hover:border-blue-300"
+            />
+            <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-500">
+              🔒
+            </span>
+            <button
+              type="button"
+              onClick={togglePasswordVisibility}
+              className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-gray-700 transition-colors"
+            >
+              {showPassword ? (
+                <EyeSlashIcon className="h-5 w-5" />
+              ) : (
+                <EyeIcon className="h-5 w-5" />
+              )}
+            </button>
+          </div>
+        </div>
+
+        {isRegister && (
+          <div className="relative space-y-1 animate-slide-up delay-300">
+            <label
+              htmlFor="role"
+              className="absolute -top-2.5 left-4 bg-white px-2 text-sm font-medium text-gray-600 transition-all duration-200"
+            >
+              Your Role
+            </label>
+            <div className="relative">
+              <select
+                id="role"
+                name="role"
+                value={form.role}
+                onChange={handleChange}
+                className="w-full py-4 pl-12 pr-4 rounded-2xl border-2 border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-300 text-gray-800 appearance-none transition-all duration-300 bg-white/50 hover:border-blue-300 cursor-pointer"
+              >
+                <option value="normal">👨‍🎓 Learner</option>
+                <option value="student">📚 Student</option>
+                <option value="social-manager">📱 Social Manager</option>
+              </select>
+              <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-500">
+                🎭
+              </span>
+            </div>
+          </div>
+        )}
+
+        {error && (
+          <div className="bg-red-100 text-red-800 rounded-2xl p-4 border border-red-300 flex items-center gap-3 animate-shake">
+            <span className="text-xl">⚠️</span>
+            <span>{error}</span>
+          </div>
+        )}
+
+        <button
+          type="submit"
+          className="w-full py-4 px-6 rounded-2xl font-bold text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:scale-100 flex items-center justify-center gap-2"
+          disabled={loading}
+        >
+          {loading ? (
+            <>
+              <span className="animate-spin text-xl">⏳</span> Processing...
+            </>
+          ) : isRegister ? (
+            <>Create Account ✨</>
+          ) : (
+            <>Sign In 🚀</>
+          )}
+        </button>
+
+        {/* Mode Switch Footer */}
+        <div className="text-center text-gray-600">
+          {isRegister ? "Already have an account?" : "New to CPS Academy?"}{" "}
+          <button
+            type="button"
+            onClick={() => onModeSwitch(isRegister ? "login" : "register")}
+            className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
+          >
+            {isRegister ? "Sign In" : "Create Account"}
+          </button>
+        </div>
+      </form>
+    </div>
   );
 };

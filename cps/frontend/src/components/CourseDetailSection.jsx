@@ -4,70 +4,100 @@ export const CourseDetailSection = ({ course }) => {
   }
 
   return (
-    <div className="bg-white rounded-lg shadow-sm p-6 border border-gray-100 grid gap-6">
-      <header className="grid gap-3">
-        <h2 className="m-0 text-2xl">{course.title}</h2>
-        <p className="m-0 text-gray-600">{course.description}</p>
+    <div className="backdrop-blur-md bg-white/90 rounded-2xl shadow-xl p-8 border border-gray-200/50 space-y-8">
+      {/* Course Header */}
+      <header className="space-y-4 pb-6 border-b border-gray-200">
+        <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+          {course.title}
+        </h2>
+        <p className="text-gray-700 text-lg leading-relaxed">
+          {course.description}
+        </p>
         <div className="flex flex-wrap gap-2">
           {course.audience?.map((role) => (
             <span
               key={role}
-              className="bg-gray-50 rounded-full py-1.5 px-3 text-xs text-gray-600"
+              className="inline-flex items-center gap-1.5 bg-purple-50 rounded-full py-2 px-4 text-sm font-medium text-purple-700 border border-purple-200"
             >
-              {role}
+              👤 {role}
             </span>
           ))}
         </div>
       </header>
 
-      <section className="grid gap-4">
-        {course.modules?.map((module) => (
+      {/* Modules */}
+      <section className="space-y-6">
+        <h3 className="text-xl font-bold text-gray-800 flex items-center gap-2">
+          📚 Course Modules
+        </h3>
+        {course.modules?.map((module, idx) => (
           <article
             key={module.title}
-            className="bg-white rounded-lg p-6 border border-gray-100 grid gap-3 shadow-none"
+            className="backdrop-blur-sm bg-white/70 rounded-xl p-6 border-2 border-gray-200 space-y-4 hover:shadow-lg transition-shadow duration-200"
           >
-            <div className="flex justify-between items-start">
-              <div>
-                <h3 className="m-0 mb-2">{module.title}</h3>
+            {/* Module Header */}
+            <div className="flex justify-between items-start gap-4">
+              <div className="flex-1">
+                <div className="flex items-center gap-3 mb-2">
+                  <span className="flex items-center justify-center w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 text-white font-bold text-sm">
+                    {idx + 1}
+                  </span>
+                  <h3 className="text-xl font-bold text-gray-800 m-0">
+                    {module.title}
+                  </h3>
+                </div>
                 {module.topics?.length ? (
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 mt-3">
                     {module.topics.map((topic) => (
                       <span
                         key={topic}
-                        className="bg-gray-50 rounded-full py-1.5 px-3 text-xs text-gray-600"
+                        className="bg-blue-50 rounded-full py-1.5 px-3 text-xs font-medium text-blue-700 border border-blue-200"
                       >
-                        {topic}
+                        🏷️ {topic}
                       </span>
                     ))}
                   </div>
                 ) : null}
               </div>
-              <span className="inline-flex items-center gap-1.5 text-xs font-semibold rounded-full py-1.5 px-3 bg-blue-50 text-blue-700">
-                {module.classes?.length ?? 0} classes
+              <span className="flex-shrink-0 inline-flex items-center gap-2 text-sm font-bold rounded-full py-2 px-4 bg-gradient-to-r from-green-100 to-emerald-100 text-green-700 border border-green-200">
+                📖 {module.classes?.length ?? 0} classes
               </span>
             </div>
 
-            <div className="grid gap-3">
-              {module.classes?.map((session) => (
+            {/* Classes */}
+            <div className="space-y-3 pl-11">
+              {module.classes?.map((session, sessionIdx) => (
                 <div
                   key={session.title}
-                  className="grid gap-1.5 border border-gray-100 rounded-lg p-3.5"
+                  className="space-y-2 border-l-4 border-blue-200 bg-gray-50/50 rounded-r-lg p-4 hover:bg-white hover:border-blue-400 transition-all duration-200"
                 >
-                  <strong>{session.title}</strong>
-                  <span className="text-gray-600">
-                    {session.duration} minutes
-                  </span>
+                  <div className="flex items-start justify-between gap-3">
+                    <strong className="text-gray-800 flex items-center gap-2">
+                      <span className="text-gray-400 font-normal">
+                        #{sessionIdx + 1}
+                      </span>
+                      {session.title}
+                    </strong>
+                    <span className="flex-shrink-0 text-sm text-gray-600 font-medium bg-white px-3 py-1 rounded-full border border-gray-200">
+                      ⏱️ {session.duration} min
+                    </span>
+                  </div>
                   {session.recordingUrl ? (
                     <a
                       href={session.recordingUrl}
                       target="_blank"
                       rel="noreferrer"
-                      className="font-semibold"
+                      className="inline-flex items-center gap-2 text-blue-600 font-semibold text-sm hover:text-blue-700 transition-colors"
                     >
-                      Watch recording ↗
+                      🎥 Watch recording
+                      <span className="hover:translate-x-1 transition-transform">
+                        ↗
+                      </span>
                     </a>
                   ) : (
-                    <span className="text-gray-400">Recording coming soon</span>
+                    <span className="text-gray-400 text-sm italic">
+                      📹 Recording coming soon
+                    </span>
                   )}
                 </div>
               ))}

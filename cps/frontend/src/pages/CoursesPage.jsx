@@ -75,37 +75,58 @@ export const CoursesPage = () => {
   }
 
   return (
-    <div className="flex flex-col gap-6">
+    <div className="space-y-8">
+      {/* Header */}
+      <div className="text-center space-y-3">
+        <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+          Explore Courses
+        </h1>
+        <p className="text-gray-600 text-lg">
+          Discover courses tailored for your role and skill level
+        </p>
+      </div>
+
       {/* Courses Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {paginatedCourses.map((course) => (
           <div
             key={course.id}
-            className="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-lg transition p-6 flex flex-col justify-between"
+            className="group backdrop-blur-md bg-white/80 rounded-2xl border border-gray-200/50 shadow-lg hover:shadow-2xl transition-all duration-300 p-6 flex flex-col justify-between hover:scale-[1.02]"
           >
-            {/* Image Placeholder */}
-            <div className="h-40 bg-purple-50 rounded-md mb-4"></div>
+            {/* Image Placeholder with gradient */}
+            <div className="h-40 bg-gradient-to-br from-blue-100 via-purple-100 to-indigo-100 rounded-xl mb-4 flex items-center justify-center">
+              <span className="text-5xl">📚</span>
+            </div>
 
             {/* Badges */}
-            <div className="flex items-center gap-2 mb-2 text-xs text-gray-500">
-              <span className="px-2 py-1 rounded-full bg-gray-100 font-semibold">
-                {course.level ?? "Beginner"}
+            <div className="flex items-center gap-2 mb-3 text-xs">
+              <span className="px-3 py-1.5 rounded-full bg-gradient-to-r from-green-100 to-emerald-100 text-green-700 font-semibold border border-green-200">
+                🎯 {course.level ?? "Beginner"}
               </span>
-              <span>{course.duration ?? "4 weeks"}</span>
+              <span className="text-gray-600 font-medium">
+                ⏱️ {course.duration ?? "4 weeks"}
+              </span>
             </div>
 
             {/* Title */}
-            <h3 className="font-semibold text-lg mb-2">{course.title}</h3>
+            <h3 className="font-bold text-xl mb-2 text-gray-800 group-hover:text-blue-600 transition-colors">
+              {course.title}
+            </h3>
 
             {/* Description */}
-            <p className="text-gray-600 text-sm mb-4">{course.description}</p>
+            <p className="text-gray-600 text-sm mb-4 leading-relaxed line-clamp-3">
+              {course.description}
+            </p>
 
             {/* View Course */}
             <Link
               to={`/courses/${course.slug ?? course.id}`}
-              className="text-purple-600 font-medium text-sm flex items-center gap-1 hover:underline"
+              className="inline-flex items-center gap-2 text-white font-semibold text-sm bg-gradient-to-r from-blue-600 to-indigo-600 py-2.5 px-4 rounded-full hover:from-blue-700 hover:to-indigo-700 transition-all duration-200 shadow-md hover:shadow-lg group-hover:scale-105"
             >
-              View course <span className="text-sm">→</span>
+              View course
+              <span className="group-hover:translate-x-1 transition-transform">
+                →
+              </span>
             </Link>
           </div>
         ))}
@@ -113,21 +134,21 @@ export const CoursesPage = () => {
 
       {/* Pagination */}
       {totalPages > 1 && (
-        <div className="flex justify-center items-center gap-4 mt-6">
+        <div className="flex justify-center items-center gap-4 mt-8">
           <button
             onClick={handlePrevPage}
             disabled={currentPage === 1}
-            className="px-4 py-2 rounded-md border bg-white text-gray-700 disabled:opacity-50 hover:bg-gray-50 transition"
+            className="px-6 py-3 rounded-full border-2 border-gray-200 bg-white text-gray-700 font-semibold disabled:opacity-50 disabled:cursor-not-allowed hover:border-blue-500 hover:text-blue-600 hover:scale-105 transition-all duration-200 shadow-md hover:shadow-lg"
           >
             ← Previous
           </button>
-          <span className="text-gray-600">
+          <span className="text-gray-700 font-medium px-4 py-2 rounded-full bg-white border-2 border-gray-200">
             Page {currentPage} of {totalPages}
           </span>
           <button
             onClick={handleNextPage}
             disabled={currentPage === totalPages}
-            className="px-4 py-2 rounded-md border bg-white text-gray-700 disabled:opacity-50 hover:bg-gray-50 transition"
+            className="px-6 py-3 rounded-full border-2 border-gray-200 bg-white text-gray-700 font-semibold disabled:opacity-50 disabled:cursor-not-allowed hover:border-blue-500 hover:text-blue-600 hover:scale-105 transition-all duration-200 shadow-md hover:shadow-lg"
           >
             Next →
           </button>

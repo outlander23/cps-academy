@@ -13,25 +13,50 @@ const DEFAULT_DURATION = 3600;
 const ToastContainer = ({ toast, onDismiss }) => {
   if (!toast) return null;
 
+  const typeConfig = {
+    success: {
+      gradient: "from-green-50 to-emerald-50",
+      border: "border-green-300",
+      icon: "✅",
+    },
+    error: {
+      gradient: "from-red-50 to-rose-50",
+      border: "border-red-300",
+      icon: "⚠️",
+    },
+    info: {
+      gradient: "from-blue-50 to-indigo-50",
+      border: "border-blue-300",
+      icon: "ℹ️",
+    },
+  };
+
+  const config = typeConfig[toast.type] || typeConfig.info;
+
   return (
     <div
-      className={`fixed right-6 bottom-6 bg-white p-4 rounded-lg border shadow-sm grid gap-1 min-w-60 ${
-        toast.type === "success"
-          ? "border-green-200"
-          : toast.type === "error"
-          ? "border-red-200"
-          : "border-blue-200"
-      }`}
+      className={`fixed right-6 bottom-6 backdrop-blur-md bg-gradient-to-br ${config.gradient} p-6 rounded-2xl border-2 ${config.border} shadow-2xl space-y-3 min-w-80 max-w-md animate-slide-in-right z-50`}
       role="status"
     >
-      <strong>{toast.title ?? "Notification"}</strong>
-      {toast.message && <span className="text-gray-600">{toast.message}</span>}
+      <div className="flex items-start gap-3">
+        <span className="text-2xl flex-shrink-0">{config.icon}</span>
+        <div className="flex-1 space-y-1">
+          <strong className="text-gray-800 font-bold block">
+            {toast.title ?? "Notification"}
+          </strong>
+          {toast.message && (
+            <span className="text-gray-700 text-sm block leading-relaxed">
+              {toast.message}
+            </span>
+          )}
+        </div>
+      </div>
       <button
         type="button"
-        className="py-1 px-3 rounded-full border-none font-semibold text-sm inline-flex items-center justify-center gap-2 cursor-pointer transition transform hover:-translate-y-0.5 hover:brightness-105 bg-blue-50 text-blue-800 shadow-none self-end mt-2"
+        className="w-full py-2.5 px-4 rounded-xl border-none font-semibold text-sm inline-flex items-center justify-center gap-2 cursor-pointer transition-all duration-200 bg-white/80 text-gray-700 hover:bg-white hover:scale-105 shadow-md"
         onClick={onDismiss}
       >
-        Dismiss
+        ✓ Dismiss
       </button>
     </div>
   );
