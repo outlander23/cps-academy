@@ -1,15 +1,15 @@
 export const InlineAlert = ({ tone = "info", title, message }) => {
   const toneConfig = {
     info: {
-      classes: "bg-blue-50 border-blue-300 text-blue-800",
+      classes: "bg-indigo-50 border-indigo-300 text-indigo-800",
       icon: "ℹ️",
     },
     danger: {
-      classes: "bg-red-50 border-red-300 text-red-800",
+      classes: "bg-rose-50 border-rose-300 text-rose-800",
       icon: "⚠️",
     },
     success: {
-      classes: "bg-green-50 border-green-300 text-green-800",
+      classes: "bg-emerald-50 border-emerald-300 text-emerald-800",
       icon: "✅",
     },
   };

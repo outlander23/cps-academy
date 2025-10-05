@@ -11,12 +11,12 @@ export const HomePage = () => {
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         {/* Left: Hero Content */}
         <div className="space-y-6 animate-slide-up">
-          <div className="inline-block px-4 py-2 bg-gradient-to-r from-blue-100 to-indigo-100 rounded-full text-sm font-semibold text-blue-800 border border-blue-200 shadow-sm">
+          <div className="inline-block px-4 py-2 bg-gradient-to-r from-indigo-100 to-cyan-100 rounded-full text-sm font-semibold text-indigo-800 border border-indigo-200 shadow-sm">
             ✨ Transform Your Career
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
             Level up your{" "}
-            <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-indigo-600 via-blue-600 to-cyan-600 bg-clip-text text-transparent">
               creative tech
             </span>{" "}
             career
@@ -31,7 +31,7 @@ export const HomePage = () => {
             <div className="flex flex-wrap gap-4">
               <Link
                 to="/register"
-                className="px-6 py-3 rounded-full font-semibold bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                className="px-6 py-3 rounded-full font-semibold bg-gradient-to-r from-indigo-600 to-blue-600 text-white hover:from-indigo-700 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
               >
                 Get Started Free
               </Link>

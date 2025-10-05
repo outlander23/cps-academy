@@ -132,8 +132,8 @@ export const ManageCoursesPage = () => {
   return (
     <div className="space-y-8">
       {/* Header Section */}
-      <div className="backdrop-blur-md bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl shadow-lg p-8 border border-blue-200/50">
-        <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent mb-3">
+      <div className="backdrop-blur-md bg-gradient-to-r from-indigo-50 to-cyan-50 rounded-2xl shadow-lg p-8 border border-indigo-200/50">
+        <h2 className="text-3xl font-bold bg-gradient-to-r from-indigo-600 via-blue-600 to-cyan-600 bg-clip-text text-transparent mb-3">
           🎓 Curate the Course Catalog
         </h2>
         <p className="text-gray-700 text-lg">

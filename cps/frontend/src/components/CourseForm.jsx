@@ -175,7 +175,7 @@ export const CourseForm = ({ initialValue, onSubmit, submitting }) => {
           >
             <header className="flex justify-between items-center pb-3 border-b border-gray-200">
               <h3 className="m-0 text-lg font-bold text-gray-800 flex items-center gap-2">
-                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 text-white text-sm">
+                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-gradient-to-br from-indigo-500 to-blue-600 text-white text-sm">
                   {index + 1}
                 </span>
                 Module {index + 1}
@@ -183,7 +183,7 @@ export const CourseForm = ({ initialValue, onSubmit, submitting }) => {
               {form.modules.length > 1 && (
                 <button
                   type="button"
-                  className="py-2 px-4 rounded-full border-none font-semibold text-sm inline-flex items-center justify-center gap-2 cursor-pointer transition-all duration-200 bg-red-50 text-red-700 hover:bg-red-100 hover:scale-105 shadow-md"
+                  className="py-2 px-4 rounded-full border-none font-semibold text-sm inline-flex items-center justify-center gap-2 cursor-pointer transition-all duration-200 bg-rose-50 text-rose-700 hover:bg-rose-100 hover:scale-105 shadow-md"
                   onClick={() => removeModule(index)}
                 >
                   🗑️ Remove
@@ -330,7 +330,7 @@ export const CourseForm = ({ initialValue, onSubmit, submitting }) => {
 
         <button
           type="button"
-          className="py-3 px-6 rounded-xl border-2 border-dashed border-blue-300 font-bold text-base inline-flex items-center justify-center gap-2 cursor-pointer transition-all duration-200 bg-blue-50 text-blue-700 hover:bg-blue-100 hover:border-blue-400 hover:scale-105 shadow-md"
+          className="py-3 px-6 rounded-xl border-2 border-dashed border-indigo-300 font-bold text-base inline-flex items-center justify-center gap-2 cursor-pointer transition-all duration-200 bg-indigo-50 text-indigo-700 hover:bg-indigo-100 hover:border-indigo-400 hover:scale-105 shadow-md"
           onClick={addModule}
         >
           ➕ Add module
@@ -340,7 +340,7 @@ export const CourseForm = ({ initialValue, onSubmit, submitting }) => {
       <div className="flex justify-end gap-3 pt-4 border-t border-gray-200">
         <button
           type="submit"
-          className="py-3.5 px-8 rounded-xl border-none font-bold text-base inline-flex items-center justify-center gap-2 cursor-pointer transition-all duration-200 bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-xl hover:shadow-2xl hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+          className="py-3.5 px-8 rounded-xl border-none font-bold text-base inline-flex items-center justify-center gap-2 cursor-pointer transition-all duration-200 bg-gradient-to-r from-indigo-600 to-blue-600 text-white shadow-xl hover:shadow-2xl hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
           disabled={submitting}
         >
           {submitting ? (

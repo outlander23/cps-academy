@@ -7,14 +7,14 @@ export const CourseCard = ({ course, to }) => {
         {/* Header */}
         <div className="flex justify-between items-start gap-3">
           <div className="flex-1">
-            <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors">
+            <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-indigo-600 transition-colors">
               {course.title}
             </h3>
             <p className="text-gray-600 leading-relaxed line-clamp-2">
               {course.description}
             </p>
           </div>
-          <span className="flex-shrink-0 inline-flex items-center gap-1.5 text-xs font-semibold rounded-full py-1.5 px-3 bg-gradient-to-r from-blue-100 to-indigo-100 text-blue-700 border border-blue-200">
+          <span className="flex-shrink-0 inline-flex items-center gap-1.5 text-xs font-semibold rounded-full py-1.5 px-3 bg-gradient-to-r from-indigo-100 to-cyan-100 text-indigo-700 border border-indigo-200">
             📚 {course.slug ?? "course"}
           </span>
         </div>
@@ -26,7 +26,7 @@ export const CourseCard = ({ course, to }) => {
               course.audience.map((role) => (
                 <span
                   key={role}
-                  className="inline-flex items-center gap-1 bg-purple-50 rounded-full py-1 px-3 text-xs font-medium text-purple-700 border border-purple-200"
+                  className="inline-flex items-center gap-1 bg-emerald-50 rounded-full py-1 px-3 text-xs font-medium text-emerald-700 border border-emerald-200"
                 >
                   👤 {role}
                 </span>

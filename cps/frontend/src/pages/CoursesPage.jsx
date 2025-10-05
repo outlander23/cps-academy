@@ -78,7 +78,7 @@ export const CoursesPage = () => {
     <div className="space-y-8">
       {/* Header */}
       <div className="text-center space-y-3">
-        <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+        <h1 className="text-4xl font-bold bg-gradient-to-r from-indigo-600 via-blue-600 to-cyan-600 bg-clip-text text-transparent">
           Explore Courses
         </h1>
         <p className="text-gray-600 text-lg">
@@ -94,13 +94,13 @@ export const CoursesPage = () => {
             className="group backdrop-blur-md bg-white/80 rounded-2xl border border-gray-200/50 shadow-lg hover:shadow-2xl transition-all duration-300 p-6 flex flex-col justify-between hover:scale-[1.02]"
           >
             {/* Image Placeholder with gradient */}
-            <div className="h-40 bg-gradient-to-br from-blue-100 via-purple-100 to-indigo-100 rounded-xl mb-4 flex items-center justify-center">
+            <div className="h-40 bg-gradient-to-br from-indigo-100 via-blue-100 to-cyan-100 rounded-xl mb-4 flex items-center justify-center">
               <span className="text-5xl">📚</span>
             </div>
 
             {/* Badges */}
             <div className="flex items-center gap-2 mb-3 text-xs">
-              <span className="px-3 py-1.5 rounded-full bg-gradient-to-r from-green-100 to-emerald-100 text-green-700 font-semibold border border-green-200">
+              <span className="px-3 py-1.5 rounded-full bg-gradient-to-r from-emerald-100 to-teal-100 text-emerald-700 font-semibold border border-emerald-200">
                 🎯 {course.level ?? "Beginner"}
               </span>
               <span className="text-gray-600 font-medium">
@@ -121,7 +121,7 @@ export const CoursesPage = () => {
             {/* View Course */}
             <Link
               to={`/courses/${course.slug ?? course.id}`}
-              className="inline-flex items-center gap-2 text-white font-semibold text-sm bg-gradient-to-r from-blue-600 to-indigo-600 py-2.5 px-4 rounded-full hover:from-blue-700 hover:to-indigo-700 transition-all duration-200 shadow-md hover:shadow-lg group-hover:scale-105"
+              className="inline-flex items-center gap-2 text-white font-semibold text-sm bg-gradient-to-r from-indigo-600 to-blue-600 py-2.5 px-4 rounded-full hover:from-indigo-700 hover:to-blue-700 transition-all duration-200 shadow-md hover:shadow-lg group-hover:scale-105"
             >
               View course
               <span className="group-hover:translate-x-1 transition-transform">

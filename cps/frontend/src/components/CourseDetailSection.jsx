@@ -7,7 +7,7 @@ export const CourseDetailSection = ({ course }) => {
     <div className="backdrop-blur-md bg-white/90 rounded-2xl shadow-xl p-8 border border-gray-200/50 space-y-8">
       {/* Course Header */}
       <header className="space-y-4 pb-6 border-b border-gray-200">
-        <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+        <h2 className="text-3xl font-bold bg-gradient-to-r from-indigo-600 via-blue-600 to-cyan-600 bg-clip-text text-transparent">
           {course.title}
         </h2>
         <p className="text-gray-700 text-lg leading-relaxed">
@@ -17,7 +17,7 @@ export const CourseDetailSection = ({ course }) => {
           {course.audience?.map((role) => (
             <span
               key={role}
-              className="inline-flex items-center gap-1.5 bg-purple-50 rounded-full py-2 px-4 text-sm font-medium text-purple-700 border border-purple-200"
+              className="inline-flex items-center gap-1.5 bg-emerald-50 rounded-full py-2 px-4 text-sm font-medium text-emerald-700 border border-emerald-200"
             >
               👤 {role}
             </span>
@@ -39,7 +39,7 @@ export const CourseDetailSection = ({ course }) => {
             <div className="flex justify-between items-start gap-4">
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-2">
-                  <span className="flex items-center justify-center w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 text-white font-bold text-sm">
+                  <span className="flex items-center justify-center w-8 h-8 rounded-full bg-gradient-to-br from-indigo-500 to-blue-600 text-white font-bold text-sm">
                     {idx + 1}
                   </span>
                   <h3 className="text-xl font-bold text-gray-800 m-0">
@@ -51,7 +51,7 @@ export const CourseDetailSection = ({ course }) => {
                     {module.topics.map((topic) => (
                       <span
                         key={topic}
-                        className="bg-blue-50 rounded-full py-1.5 px-3 text-xs font-medium text-blue-700 border border-blue-200"
+                        className="bg-indigo-50 rounded-full py-1.5 px-3 text-xs font-medium text-indigo-700 border border-indigo-200"
                       >
                         🏷️ {topic}
                       </span>
@@ -59,7 +59,7 @@ export const CourseDetailSection = ({ course }) => {
                   </div>
                 ) : null}
               </div>
-              <span className="flex-shrink-0 inline-flex items-center gap-2 text-sm font-bold rounded-full py-2 px-4 bg-gradient-to-r from-green-100 to-emerald-100 text-green-700 border border-green-200">
+              <span className="flex-shrink-0 inline-flex items-center gap-2 text-sm font-bold rounded-full py-2 px-4 bg-gradient-to-r from-emerald-100 to-teal-100 text-emerald-700 border border-emerald-200">
                 📖 {module.classes?.length ?? 0} classes
               </span>
             </div>
@@ -69,7 +69,7 @@ export const CourseDetailSection = ({ course }) => {
               {module.classes?.map((session, sessionIdx) => (
                 <div
                   key={session.title}
-                  className="space-y-2 border-l-4 border-blue-200 bg-gray-50/50 rounded-r-lg p-4 hover:bg-white hover:border-blue-400 transition-all duration-200"
+                  className="space-y-2 border-l-4 border-indigo-200 bg-gray-50/50 rounded-r-lg p-4 hover:bg-white hover:border-indigo-400 transition-all duration-200"
                 >
                   <div className="flex items-start justify-between gap-3">
                     <strong className="text-gray-800 flex items-center gap-2">
@@ -87,7 +87,7 @@ export const CourseDetailSection = ({ course }) => {
                       href={session.recordingUrl}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center gap-2 text-blue-600 font-semibold text-sm hover:text-blue-700 transition-colors"
+                      className="inline-flex items-center gap-2 text-indigo-600 font-semibold text-sm hover:text-indigo-700 transition-colors"
                     >
                       🎥 Watch recording
                       <span className="hover:translate-x-1 transition-transform">

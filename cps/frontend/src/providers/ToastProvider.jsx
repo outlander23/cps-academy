@@ -15,18 +15,18 @@ const ToastContainer = ({ toast, onDismiss }) => {
 
   const typeConfig = {
     success: {
-      gradient: "from-green-50 to-emerald-50",
-      border: "border-green-300",
+      gradient: "from-emerald-50 to-teal-50",
+      border: "border-emerald-300",
       icon: "✅",
     },
     error: {
-      gradient: "from-red-50 to-rose-50",
-      border: "border-red-300",
+      gradient: "from-rose-50 to-pink-50",
+      border: "border-rose-300",
       icon: "⚠️",
     },
     info: {
-      gradient: "from-blue-50 to-indigo-50",
-      border: "border-blue-300",
+      gradient: "from-indigo-50 to-cyan-50",
+      border: "border-indigo-300",
       icon: "ℹ️",
     },
   };
