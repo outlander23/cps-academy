@@ -13,31 +13,32 @@ export const CoursesPage = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
   const { showToast } = useToast();
 
-  useEffect(() => {
-    const loadCourses = async () => {
-      try {
-        const response = await fetchCourses();
-        setCourses(response.courses ?? []);
-      } catch (apiError) {
-        const message =
-          apiError.response?.data?.message ||
-          "We couldn't load your courses right now.";
-        setError(message);
-        showToast({ type: "error", title: "Unable to load courses", message });
-      } finally {
-        setLoading(false);
-      }
-    };
-    loadCourses();
-  }, [showToast]);
+  const loadCourses = async (page = 1) => {
+    setLoading(true);
+    try {
+      const response = await fetchCourses({ page, limit: ITEMS_PER_PAGE });
+      const { courses: fetchedCourses, count, limit, page: current } = response;
 
-  const totalPages = Math.ceil(courses.length / ITEMS_PER_PAGE);
-  const paginatedCourses = courses.slice(
-    (currentPage - 1) * ITEMS_PER_PAGE,
-    currentPage * ITEMS_PER_PAGE
-  );
+      setCourses(fetchedCourses);
+      setCurrentPage(current);
+      setTotalPages(Math.ceil(count / limit));
+    } catch (apiError) {
+      const message =
+        apiError.response?.data?.message ||
+        "We couldn't load your courses right now.";
+      setError(message);
+      showToast({ type: "error", title: "Unable to load courses", message });
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    loadCourses(currentPage);
+  }, [currentPage]);
 
   const handleNextPage = () =>
     setCurrentPage((prev) => Math.min(prev + 1, totalPages));
@@ -88,17 +89,15 @@ export const CoursesPage = () => {
 
       {/* Courses Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {paginatedCourses.map((course) => (
+        {courses.map((course) => (
           <div
             key={course.id}
             className="group backdrop-blur-md bg-white/80 rounded-2xl border border-gray-200/50 shadow-lg hover:shadow-2xl transition-all duration-300 p-6 flex flex-col justify-between hover:scale-[1.02]"
           >
-            {/* Image Placeholder with gradient */}
             <div className="h-40 bg-gradient-to-br from-indigo-100 via-blue-100 to-cyan-100 rounded-xl mb-4 flex items-center justify-center">
               <span className="text-5xl">📚</span>
             </div>
 
-            {/* Badges */}
             <div className="flex items-center gap-2 mb-3 text-xs">
               <span className="px-3 py-1.5 rounded-full bg-gradient-to-r from-emerald-100 to-teal-100 text-emerald-700 font-semibold border border-emerald-200">
                 🎯 {course.level ?? "Beginner"}
@@ -108,17 +107,14 @@ export const CoursesPage = () => {
               </span>
             </div>
 
-            {/* Title */}
             <h3 className="font-bold text-xl mb-2 text-gray-800 group-hover:text-blue-600 transition-colors">
               {course.title}
             </h3>
 
-            {/* Description */}
             <p className="text-gray-600 text-sm mb-4 leading-relaxed line-clamp-3">
               {course.description}
             </p>
 
-            {/* View Course */}
             <Link
               to={`/courses/${course.slug ?? course.id}`}
               className="inline-flex items-center gap-2 text-white font-semibold text-sm bg-gradient-to-r from-indigo-600 to-blue-600 py-2.5 px-4 rounded-full hover:from-indigo-700 hover:to-blue-700 transition-all duration-200 shadow-md hover:shadow-lg group-hover:scale-105"

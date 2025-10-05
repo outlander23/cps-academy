@@ -7,92 +7,74 @@ export const HomePage = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white space-y-16 py-12 px-4 md:px-8 lg:px-16 animate-fade-in">
-      {/* Hero Section with Enhanced Design */}
-      <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-        {/* Left: Hero Content */}
-        <div className="space-y-6 animate-slide-up">
-          <div className="inline-block px-4 py-2 bg-gradient-to-r from-indigo-100 to-cyan-100 rounded-full text-sm font-semibold text-indigo-800 border border-indigo-200 shadow-sm">
-            ✨ Transform Your Career
-          </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
-            Level up your{" "}
-            <span className="bg-gradient-to-r from-indigo-600 via-blue-600 to-cyan-600 bg-clip-text text-transparent">
-              creative tech
-            </span>{" "}
-            career
-          </h1>
-          <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-xl">
-            CPS Academy delivers curated learning paths, expert-led modules, and
-            on-demand recordings—all tailored to your role. Join thousands of
-            learners advancing their careers.
-          </p>
+      <div className="flex-1 relative animate-slide-up">
+        {isAuthenticated && user ? (
+          <div className="backdrop-blur-md bg-white/80 rounded-2xl p-8 shadow-2xl border border-gray-200/70 space-y-6 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl">
+            {/* User Greeting */}
+            <div className="flex items-center gap-4">
+              <div className="w-14 h-14 rounded-full bg-gradient-to-r from-blue-500 to-indigo-500 flex items-center justify-center text-3xl shadow-md">
+                👋
+              </div>
+              <div>
+                <h2 className="text-2xl font-bold text-gray-800">
+                  Welcome back, {user.name.split(" ")[0]}!
+                </h2>
+                <p className="text-sm text-gray-600">
+                  Let’s continue learning 🚀
+                </p>
+              </div>
+            </div>
 
-          {!isAuthenticated && (
-            <div className="flex flex-wrap gap-4">
+            {/* Message */}
+            <p className="text-gray-600 leading-relaxed">
+              Pick up where you left off in your learning journey.
+            </p>
+
+            {/* Buttons */}
+            <div className="space-y-3">
+              <Link
+                to="/courses"
+                className="block w-full text-center py-3 px-6 rounded-full font-semibold bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1"
+              >
+                Continue Learning →
+              </Link>
+
+              {user.role === "developer" && (
+                <Link
+                  to="/manage/courses"
+                  className="block w-full text-center py-3 px-6 rounded-full font-semibold bg-gray-100 text-gray-700 border border-gray-200 hover:bg-gray-200 transition-all duration-300 shadow-sm hover:shadow-md transform hover:-translate-y-1"
+                >
+                  Manage Course Catalog
+                </Link>
+              )}
+            </div>
+          </div>
+        ) : (
+          <div className="backdrop-blur-md bg-white/80 rounded-2xl p-8 shadow-lg border border-gray-200/70 text-center space-y-4">
+            <div className="text-5xl">🎯</div>
+            <h2 className="text-2xl font-bold text-gray-800">
+              Ready to kickstart your journey?
+            </h2>
+            <p className="text-gray-600 leading-relaxed">
+              Sign up or log in to explore our expert-led courses.
+            </p>
+            <div className="flex justify-center gap-4">
               <Link
                 to="/register"
-                className="px-6 py-3 rounded-full font-semibold bg-gradient-to-r from-indigo-600 to-blue-600 text-white hover:from-indigo-700 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                className="px-6 py-3 rounded-full font-semibold bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1"
               >
-                Get Started Free
+                Get Started
               </Link>
               <Link
                 to="/login"
-                className="px-6 py-3 rounded-full font-semibold bg-white text-gray-700 border-2 border-gray-300 hover:border-gray-400 hover:bg-gray-50 transition-all duration-300 transform hover:scale-105"
+                className="px-6 py-3 rounded-full font-semibold bg-gray-100 text-gray-700 border border-gray-200 hover:bg-gray-200 transition-all duration-300 shadow-sm hover:shadow-md transform hover:-translate-y-1"
               >
                 Sign In
               </Link>
             </div>
-          )}
-        </div>
-
-        {/* Right: Hero Image or Welcome Card */}
-        <div className="relative overflow-hidden rounded-2xl shadow-xl animate-fade-in-right">
-          {isAuthenticated && user ? (
-            <div className="backdrop-blur-md bg-white/80 p-8 space-y-6">
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-r from-blue-500 to-indigo-500 flex items-center justify-center text-2xl shadow-md">
-                  👋
-                </div>
-                <div>
-                  <h2 className="text-2xl font-bold text-gray-800">
-                    Welcome back, {user.name.split(" ")[0]}!
-                  </h2>
-                  <p className="text-sm text-gray-600">
-                    Ready to continue learning?
-                  </p>
-                </div>
-              </div>
-
-              <p className="text-gray-600">
-                Jump back into your course catalog to keep building momentum.
-              </p>
-
-              <div className="space-y-3">
-                <Link
-                  to="/courses"
-                  className="block w-full text-center py-3 px-6 rounded-full font-semibold bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
-                >
-                  Go to my courses →
-                </Link>
-                {user.role === "developer" && (
-                  <Link
-                    to="/manage/courses"
-                    className="block w-full text-center py-3 px-6 rounded-full font-semibold bg-gray-100 text-gray-700 hover:bg-gray-200 transition-all duration-300 transform hover:scale-105"
-                  >
-                    Manage course catalog
-                  </Link>
-                )}
-              </div>
-            </div>
-          ) : (
-            <img
-              src="https://media.easy-peasy.ai/27feb2bb-aeb4-4a83-9fb6-8f3f2a15885e/929506e4-cb3a-41c7-b050-6e6ce1b53a9d.png"
-              alt="Creative tech career illustration with coding and design elements"
-              className="w-full h-auto object-cover rounded-2xl transform hover:scale-105 transition-transform duration-500"
-            />
-          )}
-        </div>
-      </section>
+          </div>
+        )}
+      </div>
 
       {!isAuthenticated && (
         <section className="backdrop-blur-md bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-200/50 shadow-lg animate-fade-in-up">

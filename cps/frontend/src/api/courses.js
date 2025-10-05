@@ -2,6 +2,7 @@ import client from "./client.js";
 
 export const fetchCourses = async (params = {}) => {
   const response = await client.get("/courses", { params });
+  console.log(response);
   return response.data;
 };
 
