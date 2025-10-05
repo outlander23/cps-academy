@@ -52,10 +52,10 @@ Use these original seeded accounts to explore different roles:
 
 | Role                 | Email                  | Password    |
 |----------------------|------------------------|-------------|
-| Normal User          | welcome@cpsacademy.com | password123 |
-| Student              | student@cpsacademy.com | password123 |
-| Social Media Manager | smm@cpsacademy.com     | password123 |
-| Developer            | dev@cpsacademy.com     | password123 |
+| Normal User          | welcome@cpsacademy.com | Password123! |
+| Student              | student@cpsacademy.com | Password123! |
+| Social Media Manager | smm@cpsacademy.com     | Password123! |
+| Developer            | dev@cpsacademy.com     | Password123! |
 
 ---
 
