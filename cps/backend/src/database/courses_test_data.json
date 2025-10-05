@@ -1,0 +1,2358 @@
+[
+  {
+    "title": "Fullstack Development 1",
+    "description": "Learn the latest techniques for scalable web apps.",
+    "audience": [
+      "normal"
+    ],
+    "modules": [
+      {
+        "title": "Design Systems Mastery Module",
+        "topics": [
+          "Token Types",
+          "Automation"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 50,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "UI/UX Fundamentals 2",
+    "description": "Learn the latest techniques for scalable web apps.",
+    "audience": [
+      "normal",
+      "social-manager"
+    ],
+    "modules": [
+      {
+        "title": "Design Systems Mastery Module",
+        "topics": [
+          "Performance",
+          "Optimization"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 54,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Web Performance Optimization 3",
+    "description": "Build performant and maintainable applications.",
+    "audience": [
+      "social-manager"
+    ],
+    "modules": [
+      {
+        "title": "GraphQL Deep Dive Module",
+        "topics": [
+          "Design Patterns",
+          "Testing"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 71,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Microservices with Express 4",
+    "description": "Improve your coding skills with practical examples.",
+    "audience": [
+      "developer",
+      "student"
+    ],
+    "modules": [
+      {
+        "title": "Frontend Architecture Module",
+        "topics": [
+          "Accessibility",
+          "Responsive Design"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 109,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Frontend Architecture 5",
+    "description": "Master design systems and reusable components.",
+    "audience": [
+      "student",
+      "developer"
+    ],
+    "modules": [
+      {
+        "title": "Mastering Node.js Module",
+        "topics": [
+          "Token Types",
+          "Automation"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 80,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "TypeScript Essentials 6",
+    "description": "Learn the latest techniques for scalable web apps.",
+    "audience": [
+      "developer"
+    ],
+    "modules": [
+      {
+        "title": "Design Systems Mastery Module",
+        "topics": [
+          "Components",
+          "Best Practices"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 77,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Web Performance Optimization 7",
+    "description": "Improve your coding skills with practical examples.",
+    "audience": [
+      "developer",
+      "normal"
+    ],
+    "modules": [
+      {
+        "title": "Microservices with Express Module",
+        "topics": [
+          "Design Patterns",
+          "Testing"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 84,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Design Systems Mastery 8",
+    "description": "Build performant and maintainable applications.",
+    "audience": [
+      "developer"
+    ],
+    "modules": [
+      {
+        "title": "Design Systems Mastery Module",
+        "topics": [
+          "Design Patterns",
+          "Testing"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 36,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Design Systems Mastery 9",
+    "description": "Build performant and maintainable applications.",
+    "audience": [
+      "student",
+      "normal"
+    ],
+    "modules": [
+      {
+        "title": "Frontend Architecture Module",
+        "topics": [
+          "Token Types",
+          "Automation"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 71,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Fullstack Development 10",
+    "description": "Improve your coding skills with practical examples.",
+    "audience": [
+      "developer"
+    ],
+    "modules": [
+      {
+        "title": "Microservices with Express Module",
+        "topics": [
+          "Accessibility",
+          "Responsive Design"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 111,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "GraphQL Deep Dive 11",
+    "description": "Improve your coding skills with practical examples.",
+    "audience": [
+      "student"
+    ],
+    "modules": [
+      {
+        "title": "Microservices with Express Module",
+        "topics": [
+          "Performance",
+          "Optimization"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 72,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Design Systems Mastery 12",
+    "description": "Learn the latest techniques for scalable web apps.",
+    "audience": [
+      "normal",
+      "developer"
+    ],
+    "modules": [
+      {
+        "title": "GraphQL Deep Dive Module",
+        "topics": [
+          "Performance",
+          "Optimization"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 64,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "GraphQL Deep Dive 13",
+    "description": "Build performant and maintainable applications.",
+    "audience": [
+      "student"
+    ],
+    "modules": [
+      {
+        "title": "TypeScript Essentials Module",
+        "topics": [
+          "Accessibility",
+          "Responsive Design"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 66,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Mastering Node.js 14",
+    "description": "Build performant and maintainable applications.",
+    "audience": [
+      "developer",
+      "normal"
+    ],
+    "modules": [
+      {
+        "title": "TypeScript Essentials Module",
+        "topics": [
+          "Accessibility",
+          "Responsive Design"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 32,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Fullstack Development 15",
+    "description": "Learn the latest techniques for scalable web apps.",
+    "audience": [
+      "developer",
+      "normal"
+    ],
+    "modules": [
+      {
+        "title": "Advanced React Patterns Module",
+        "topics": [
+          "Components",
+          "Best Practices"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 44,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Design Systems Mastery 16",
+    "description": "Deep dive into modern development workflows.",
+    "audience": [
+      "developer"
+    ],
+    "modules": [
+      {
+        "title": "Microservices with Express Module",
+        "topics": [
+          "Components",
+          "Best Practices"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 56,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Design Systems Mastery 17",
+    "description": "Deep dive into modern development workflows.",
+    "audience": [
+      "social-manager",
+      "normal"
+    ],
+    "modules": [
+      {
+        "title": "Fullstack Development Module",
+        "topics": [
+          "Token Types",
+          "Automation"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 43,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Mastering Node.js 18",
+    "description": "Improve your coding skills with practical examples.",
+    "audience": [
+      "student",
+      "normal"
+    ],
+    "modules": [
+      {
+        "title": "TypeScript Essentials Module",
+        "topics": [
+          "Components",
+          "Best Practices"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 44,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Design Systems Mastery 19",
+    "description": "Deep dive into modern development workflows.",
+    "audience": [
+      "developer"
+    ],
+    "modules": [
+      {
+        "title": "Design Systems Mastery Module",
+        "topics": [
+          "Accessibility",
+          "Responsive Design"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 49,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Fullstack Development 20",
+    "description": "Deep dive into modern development workflows.",
+    "audience": [
+      "normal",
+      "developer"
+    ],
+    "modules": [
+      {
+        "title": "Microservices with Express Module",
+        "topics": [
+          "Token Types",
+          "Automation"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 54,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Microservices with Express 21",
+    "description": "Master design systems and reusable components.",
+    "audience": [
+      "developer",
+      "normal"
+    ],
+    "modules": [
+      {
+        "title": "Frontend Architecture Module",
+        "topics": [
+          "Components",
+          "Best Practices"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 56,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "TypeScript Essentials 22",
+    "description": "Master design systems and reusable components.",
+    "audience": [
+      "student",
+      "normal"
+    ],
+    "modules": [
+      {
+        "title": "UI/UX Fundamentals Module",
+        "topics": [
+          "Token Types",
+          "Automation"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 104,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "GraphQL Deep Dive 23",
+    "description": "Improve your coding skills with practical examples.",
+    "audience": [
+      "social-manager"
+    ],
+    "modules": [
+      {
+        "title": "UI/UX Fundamentals Module",
+        "topics": [
+          "Design Patterns",
+          "Testing"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 107,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Mastering Node.js 24",
+    "description": "Build performant and maintainable applications.",
+    "audience": [
+      "developer",
+      "social-manager"
+    ],
+    "modules": [
+      {
+        "title": "GraphQL Deep Dive Module",
+        "topics": [
+          "Performance",
+          "Optimization"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 50,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Advanced React Patterns 25",
+    "description": "Improve your coding skills with practical examples.",
+    "audience": [
+      "social-manager",
+      "student"
+    ],
+    "modules": [
+      {
+        "title": "Advanced React Patterns Module",
+        "topics": [
+          "Components",
+          "Best Practices"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 30,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Advanced React Patterns 26",
+    "description": "Improve your coding skills with practical examples.",
+    "audience": [
+      "student"
+    ],
+    "modules": [
+      {
+        "title": "UI/UX Fundamentals Module",
+        "topics": [
+          "Design Patterns",
+          "Testing"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 52,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "TypeScript Essentials 27",
+    "description": "Deep dive into modern development workflows.",
+    "audience": [
+      "normal",
+      "student"
+    ],
+    "modules": [
+      {
+        "title": "Fullstack Development Module",
+        "topics": [
+          "Performance",
+          "Optimization"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 54,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Design Systems Mastery 28",
+    "description": "Deep dive into modern development workflows.",
+    "audience": [
+      "student"
+    ],
+    "modules": [
+      {
+        "title": "Fullstack Development Module",
+        "topics": [
+          "Accessibility",
+          "Responsive Design"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 57,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "TypeScript Essentials 29",
+    "description": "Learn the latest techniques for scalable web apps.",
+    "audience": [
+      "student",
+      "normal"
+    ],
+    "modules": [
+      {
+        "title": "GraphQL Deep Dive Module",
+        "topics": [
+          "Components",
+          "Best Practices"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 41,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "GraphQL Deep Dive 30",
+    "description": "Learn the latest techniques for scalable web apps.",
+    "audience": [
+      "social-manager",
+      "student"
+    ],
+    "modules": [
+      {
+        "title": "Web Performance Optimization Module",
+        "topics": [
+          "Performance",
+          "Optimization"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 106,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Design Systems Mastery 31",
+    "description": "Improve your coding skills with practical examples.",
+    "audience": [
+      "normal"
+    ],
+    "modules": [
+      {
+        "title": "Advanced React Patterns Module",
+        "topics": [
+          "Performance",
+          "Optimization"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 44,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "TypeScript Essentials 32",
+    "description": "Deep dive into modern development workflows.",
+    "audience": [
+      "normal",
+      "student"
+    ],
+    "modules": [
+      {
+        "title": "Design Systems Mastery Module",
+        "topics": [
+          "Design Patterns",
+          "Testing"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 46,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "GraphQL Deep Dive 33",
+    "description": "Deep dive into modern development workflows.",
+    "audience": [
+      "social-manager"
+    ],
+    "modules": [
+      {
+        "title": "GraphQL Deep Dive Module",
+        "topics": [
+          "Performance",
+          "Optimization"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 79,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Design Systems Mastery 34",
+    "description": "Improve your coding skills with practical examples.",
+    "audience": [
+      "developer",
+      "student"
+    ],
+    "modules": [
+      {
+        "title": "Frontend Architecture Module",
+        "topics": [
+          "Components",
+          "Best Practices"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 45,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Microservices with Express 35",
+    "description": "Build performant and maintainable applications.",
+    "audience": [
+      "student",
+      "normal"
+    ],
+    "modules": [
+      {
+        "title": "Advanced React Patterns Module",
+        "topics": [
+          "Design Patterns",
+          "Testing"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 35,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Advanced React Patterns 36",
+    "description": "Deep dive into modern development workflows.",
+    "audience": [
+      "normal"
+    ],
+    "modules": [
+      {
+        "title": "Design Systems Mastery Module",
+        "topics": [
+          "Components",
+          "Best Practices"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 31,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Mastering Node.js 37",
+    "description": "Learn the latest techniques for scalable web apps.",
+    "audience": [
+      "normal"
+    ],
+    "modules": [
+      {
+        "title": "GraphQL Deep Dive Module",
+        "topics": [
+          "Design Patterns",
+          "Testing"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 56,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Microservices with Express 38",
+    "description": "Deep dive into modern development workflows.",
+    "audience": [
+      "developer",
+      "social-manager"
+    ],
+    "modules": [
+      {
+        "title": "Web Performance Optimization Module",
+        "topics": [
+          "Components",
+          "Best Practices"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 55,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Mastering Node.js 39",
+    "description": "Learn the latest techniques for scalable web apps.",
+    "audience": [
+      "social-manager",
+      "student"
+    ],
+    "modules": [
+      {
+        "title": "TypeScript Essentials Module",
+        "topics": [
+          "Accessibility",
+          "Responsive Design"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 118,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Mastering Node.js 40",
+    "description": "Build performant and maintainable applications.",
+    "audience": [
+      "developer"
+    ],
+    "modules": [
+      {
+        "title": "Fullstack Development Module",
+        "topics": [
+          "Token Types",
+          "Automation"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 93,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "TypeScript Essentials 41",
+    "description": "Learn the latest techniques for scalable web apps.",
+    "audience": [
+      "normal",
+      "developer"
+    ],
+    "modules": [
+      {
+        "title": "Mastering Node.js Module",
+        "topics": [
+          "Components",
+          "Best Practices"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 79,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Advanced React Patterns 42",
+    "description": "Learn the latest techniques for scalable web apps.",
+    "audience": [
+      "social-manager",
+      "normal"
+    ],
+    "modules": [
+      {
+        "title": "Web Performance Optimization Module",
+        "topics": [
+          "Performance",
+          "Optimization"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 81,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Frontend Architecture 43",
+    "description": "Improve your coding skills with practical examples.",
+    "audience": [
+      "developer",
+      "social-manager"
+    ],
+    "modules": [
+      {
+        "title": "Advanced React Patterns Module",
+        "topics": [
+          "Design Patterns",
+          "Testing"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 92,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Mastering Node.js 44",
+    "description": "Improve your coding skills with practical examples.",
+    "audience": [
+      "normal"
+    ],
+    "modules": [
+      {
+        "title": "GraphQL Deep Dive Module",
+        "topics": [
+          "Design Patterns",
+          "Testing"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 70,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "GraphQL Deep Dive 45",
+    "description": "Master design systems and reusable components.",
+    "audience": [
+      "normal",
+      "student"
+    ],
+    "modules": [
+      {
+        "title": "Advanced React Patterns Module",
+        "topics": [
+          "Accessibility",
+          "Responsive Design"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 70,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Mastering Node.js 46",
+    "description": "Deep dive into modern development workflows.",
+    "audience": [
+      "normal",
+      "student"
+    ],
+    "modules": [
+      {
+        "title": "Frontend Architecture Module",
+        "topics": [
+          "Accessibility",
+          "Responsive Design"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 46,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Frontend Architecture 47",
+    "description": "Improve your coding skills with practical examples.",
+    "audience": [
+      "normal"
+    ],
+    "modules": [
+      {
+        "title": "Frontend Architecture Module",
+        "topics": [
+          "Performance",
+          "Optimization"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 90,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "GraphQL Deep Dive 48",
+    "description": "Improve your coding skills with practical examples.",
+    "audience": [
+      "social-manager"
+    ],
+    "modules": [
+      {
+        "title": "GraphQL Deep Dive Module",
+        "topics": [
+          "Performance",
+          "Optimization"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 55,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Frontend Architecture 49",
+    "description": "Improve your coding skills with practical examples.",
+    "audience": [
+      "student",
+      "normal"
+    ],
+    "modules": [
+      {
+        "title": "UI/UX Fundamentals Module",
+        "topics": [
+          "Design Patterns",
+          "Testing"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 53,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Advanced React Patterns 50",
+    "description": "Improve your coding skills with practical examples.",
+    "audience": [
+      "social-manager",
+      "developer"
+    ],
+    "modules": [
+      {
+        "title": "Frontend Architecture Module",
+        "topics": [
+          "Performance",
+          "Optimization"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 102,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Frontend Architecture 51",
+    "description": "Improve your coding skills with practical examples.",
+    "audience": [
+      "student"
+    ],
+    "modules": [
+      {
+        "title": "Mastering Node.js Module",
+        "topics": [
+          "Design Patterns",
+          "Testing"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 36,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Mastering Node.js 52",
+    "description": "Build performant and maintainable applications.",
+    "audience": [
+      "social-manager",
+      "student"
+    ],
+    "modules": [
+      {
+        "title": "Advanced React Patterns Module",
+        "topics": [
+          "Token Types",
+          "Automation"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 102,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Advanced React Patterns 53",
+    "description": "Deep dive into modern development workflows.",
+    "audience": [
+      "social-manager"
+    ],
+    "modules": [
+      {
+        "title": "Frontend Architecture Module",
+        "topics": [
+          "Components",
+          "Best Practices"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 62,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Advanced React Patterns 54",
+    "description": "Build performant and maintainable applications.",
+    "audience": [
+      "social-manager"
+    ],
+    "modules": [
+      {
+        "title": "Advanced React Patterns Module",
+        "topics": [
+          "Token Types",
+          "Automation"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 62,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Microservices with Express 55",
+    "description": "Improve your coding skills with practical examples.",
+    "audience": [
+      "student",
+      "developer"
+    ],
+    "modules": [
+      {
+        "title": "Fullstack Development Module",
+        "topics": [
+          "Performance",
+          "Optimization"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 68,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "GraphQL Deep Dive 56",
+    "description": "Deep dive into modern development workflows.",
+    "audience": [
+      "normal"
+    ],
+    "modules": [
+      {
+        "title": "UI/UX Fundamentals Module",
+        "topics": [
+          "Accessibility",
+          "Responsive Design"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 90,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Web Performance Optimization 57",
+    "description": "Build performant and maintainable applications.",
+    "audience": [
+      "developer"
+    ],
+    "modules": [
+      {
+        "title": "Microservices with Express Module",
+        "topics": [
+          "Design Patterns",
+          "Testing"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 107,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Mastering Node.js 58",
+    "description": "Learn the latest techniques for scalable web apps.",
+    "audience": [
+      "normal",
+      "social-manager"
+    ],
+    "modules": [
+      {
+        "title": "UI/UX Fundamentals Module",
+        "topics": [
+          "Components",
+          "Best Practices"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 87,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Microservices with Express 59",
+    "description": "Improve your coding skills with practical examples.",
+    "audience": [
+      "normal",
+      "social-manager"
+    ],
+    "modules": [
+      {
+        "title": "UI/UX Fundamentals Module",
+        "topics": [
+          "Token Types",
+          "Automation"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 39,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "UI/UX Fundamentals 60",
+    "description": "Master design systems and reusable components.",
+    "audience": [
+      "social-manager",
+      "normal"
+    ],
+    "modules": [
+      {
+        "title": "GraphQL Deep Dive Module",
+        "topics": [
+          "Accessibility",
+          "Responsive Design"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 120,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "GraphQL Deep Dive 61",
+    "description": "Deep dive into modern development workflows.",
+    "audience": [
+      "normal",
+      "social-manager"
+    ],
+    "modules": [
+      {
+        "title": "TypeScript Essentials Module",
+        "topics": [
+          "Components",
+          "Best Practices"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 33,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Design Systems Mastery 62",
+    "description": "Improve your coding skills with practical examples.",
+    "audience": [
+      "developer",
+      "social-manager"
+    ],
+    "modules": [
+      {
+        "title": "GraphQL Deep Dive Module",
+        "topics": [
+          "Token Types",
+          "Automation"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 106,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Web Performance Optimization 63",
+    "description": "Improve your coding skills with practical examples.",
+    "audience": [
+      "developer",
+      "social-manager"
+    ],
+    "modules": [
+      {
+        "title": "Fullstack Development Module",
+        "topics": [
+          "Accessibility",
+          "Responsive Design"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 90,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "UI/UX Fundamentals 64",
+    "description": "Master design systems and reusable components.",
+    "audience": [
+      "developer"
+    ],
+    "modules": [
+      {
+        "title": "Microservices with Express Module",
+        "topics": [
+          "Performance",
+          "Optimization"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 120,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Advanced React Patterns 65",
+    "description": "Learn the latest techniques for scalable web apps.",
+    "audience": [
+      "social-manager",
+      "student"
+    ],
+    "modules": [
+      {
+        "title": "Design Systems Mastery Module",
+        "topics": [
+          "Performance",
+          "Optimization"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 93,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Web Performance Optimization 66",
+    "description": "Master design systems and reusable components.",
+    "audience": [
+      "normal",
+      "developer"
+    ],
+    "modules": [
+      {
+        "title": "Design Systems Mastery Module",
+        "topics": [
+          "Token Types",
+          "Automation"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 52,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "TypeScript Essentials 67",
+    "description": "Improve your coding skills with practical examples.",
+    "audience": [
+      "developer",
+      "social-manager"
+    ],
+    "modules": [
+      {
+        "title": "Web Performance Optimization Module",
+        "topics": [
+          "Token Types",
+          "Automation"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 66,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Fullstack Development 68",
+    "description": "Improve your coding skills with practical examples.",
+    "audience": [
+      "social-manager",
+      "normal"
+    ],
+    "modules": [
+      {
+        "title": "UI/UX Fundamentals Module",
+        "topics": [
+          "Components",
+          "Best Practices"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 76,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Fullstack Development 69",
+    "description": "Improve your coding skills with practical examples.",
+    "audience": [
+      "student",
+      "developer"
+    ],
+    "modules": [
+      {
+        "title": "GraphQL Deep Dive Module",
+        "topics": [
+          "Accessibility",
+          "Responsive Design"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 44,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "TypeScript Essentials 70",
+    "description": "Learn the latest techniques for scalable web apps.",
+    "audience": [
+      "student"
+    ],
+    "modules": [
+      {
+        "title": "TypeScript Essentials Module",
+        "topics": [
+          "Components",
+          "Best Practices"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 107,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Microservices with Express 71",
+    "description": "Master design systems and reusable components.",
+    "audience": [
+      "developer"
+    ],
+    "modules": [
+      {
+        "title": "Frontend Architecture Module",
+        "topics": [
+          "Components",
+          "Best Practices"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 85,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Design Systems Mastery 72",
+    "description": "Improve your coding skills with practical examples.",
+    "audience": [
+      "normal"
+    ],
+    "modules": [
+      {
+        "title": "TypeScript Essentials Module",
+        "topics": [
+          "Token Types",
+          "Automation"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 75,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Mastering Node.js 73",
+    "description": "Deep dive into modern development workflows.",
+    "audience": [
+      "social-manager"
+    ],
+    "modules": [
+      {
+        "title": "Microservices with Express Module",
+        "topics": [
+          "Performance",
+          "Optimization"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 77,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Advanced React Patterns 74",
+    "description": "Improve your coding skills with practical examples.",
+    "audience": [
+      "student",
+      "developer"
+    ],
+    "modules": [
+      {
+        "title": "GraphQL Deep Dive Module",
+        "topics": [
+          "Token Types",
+          "Automation"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 94,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Advanced React Patterns 75",
+    "description": "Build performant and maintainable applications.",
+    "audience": [
+      "student"
+    ],
+    "modules": [
+      {
+        "title": "UI/UX Fundamentals Module",
+        "topics": [
+          "Performance",
+          "Optimization"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 95,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Fullstack Development 76",
+    "description": "Deep dive into modern development workflows.",
+    "audience": [
+      "social-manager",
+      "student"
+    ],
+    "modules": [
+      {
+        "title": "Web Performance Optimization Module",
+        "topics": [
+          "Components",
+          "Best Practices"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 40,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Web Performance Optimization 77",
+    "description": "Learn the latest techniques for scalable web apps.",
+    "audience": [
+      "normal",
+      "student"
+    ],
+    "modules": [
+      {
+        "title": "Mastering Node.js Module",
+        "topics": [
+          "Components",
+          "Best Practices"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 68,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Advanced React Patterns 78",
+    "description": "Build performant and maintainable applications.",
+    "audience": [
+      "developer"
+    ],
+    "modules": [
+      {
+        "title": "Microservices with Express Module",
+        "topics": [
+          "Design Patterns",
+          "Testing"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 91,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "TypeScript Essentials 79",
+    "description": "Learn the latest techniques for scalable web apps.",
+    "audience": [
+      "developer"
+    ],
+    "modules": [
+      {
+        "title": "Design Systems Mastery Module",
+        "topics": [
+          "Components",
+          "Best Practices"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 76,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Web Performance Optimization 80",
+    "description": "Learn the latest techniques for scalable web apps.",
+    "audience": [
+      "normal",
+      "developer"
+    ],
+    "modules": [
+      {
+        "title": "Fullstack Development Module",
+        "topics": [
+          "Accessibility",
+          "Responsive Design"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 33,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Mastering Node.js 81",
+    "description": "Build performant and maintainable applications.",
+    "audience": [
+      "student",
+      "developer"
+    ],
+    "modules": [
+      {
+        "title": "TypeScript Essentials Module",
+        "topics": [
+          "Components",
+          "Best Practices"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 84,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "GraphQL Deep Dive 82",
+    "description": "Master design systems and reusable components.",
+    "audience": [
+      "social-manager"
+    ],
+    "modules": [
+      {
+        "title": "UI/UX Fundamentals Module",
+        "topics": [
+          "Performance",
+          "Optimization"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 115,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Microservices with Express 83",
+    "description": "Deep dive into modern development workflows.",
+    "audience": [
+      "normal"
+    ],
+    "modules": [
+      {
+        "title": "Design Systems Mastery Module",
+        "topics": [
+          "Token Types",
+          "Automation"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 113,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "TypeScript Essentials 84",
+    "description": "Build performant and maintainable applications.",
+    "audience": [
+      "social-manager"
+    ],
+    "modules": [
+      {
+        "title": "Microservices with Express Module",
+        "topics": [
+          "Design Patterns",
+          "Testing"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 89,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Frontend Architecture 85",
+    "description": "Master design systems and reusable components.",
+    "audience": [
+      "social-manager",
+      "developer"
+    ],
+    "modules": [
+      {
+        "title": "Mastering Node.js Module",
+        "topics": [
+          "Components",
+          "Best Practices"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 79,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Microservices with Express 86",
+    "description": "Build performant and maintainable applications.",
+    "audience": [
+      "student",
+      "developer"
+    ],
+    "modules": [
+      {
+        "title": "Frontend Architecture Module",
+        "topics": [
+          "Performance",
+          "Optimization"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 70,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Mastering Node.js 87",
+    "description": "Improve your coding skills with practical examples.",
+    "audience": [
+      "social-manager"
+    ],
+    "modules": [
+      {
+        "title": "TypeScript Essentials Module",
+        "topics": [
+          "Token Types",
+          "Automation"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 36,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "TypeScript Essentials 88",
+    "description": "Learn the latest techniques for scalable web apps.",
+    "audience": [
+      "developer"
+    ],
+    "modules": [
+      {
+        "title": "Web Performance Optimization Module",
+        "topics": [
+          "Performance",
+          "Optimization"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 53,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Mastering Node.js 89",
+    "description": "Improve your coding skills with practical examples.",
+    "audience": [
+      "normal"
+    ],
+    "modules": [
+      {
+        "title": "Web Performance Optimization Module",
+        "topics": [
+          "Components",
+          "Best Practices"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 108,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Web Performance Optimization 90",
+    "description": "Deep dive into modern development workflows.",
+    "audience": [
+      "social-manager"
+    ],
+    "modules": [
+      {
+        "title": "Mastering Node.js Module",
+        "topics": [
+          "Token Types",
+          "Automation"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 69,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Design Systems Mastery 91",
+    "description": "Improve your coding skills with practical examples.",
+    "audience": [
+      "student"
+    ],
+    "modules": [
+      {
+        "title": "Fullstack Development Module",
+        "topics": [
+          "Accessibility",
+          "Responsive Design"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 43,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "GraphQL Deep Dive 92",
+    "description": "Master design systems and reusable components.",
+    "audience": [
+      "social-manager",
+      "normal"
+    ],
+    "modules": [
+      {
+        "title": "Microservices with Express Module",
+        "topics": [
+          "Token Types",
+          "Automation"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 74,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Web Performance Optimization 93",
+    "description": "Improve your coding skills with practical examples.",
+    "audience": [
+      "normal",
+      "social-manager"
+    ],
+    "modules": [
+      {
+        "title": "Advanced React Patterns Module",
+        "topics": [
+          "Performance",
+          "Optimization"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 80,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "UI/UX Fundamentals 94",
+    "description": "Learn the latest techniques for scalable web apps.",
+    "audience": [
+      "student"
+    ],
+    "modules": [
+      {
+        "title": "Web Performance Optimization Module",
+        "topics": [
+          "Accessibility",
+          "Responsive Design"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 113,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "TypeScript Essentials 95",
+    "description": "Deep dive into modern development workflows.",
+    "audience": [
+      "social-manager",
+      "normal"
+    ],
+    "modules": [
+      {
+        "title": "Design Systems Mastery Module",
+        "topics": [
+          "Accessibility",
+          "Responsive Design"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 64,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "GraphQL Deep Dive 96",
+    "description": "Build performant and maintainable applications.",
+    "audience": [
+      "normal",
+      "developer"
+    ],
+    "modules": [
+      {
+        "title": "Web Performance Optimization Module",
+        "topics": [
+          "Accessibility",
+          "Responsive Design"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 112,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "GraphQL Deep Dive 97",
+    "description": "Master design systems and reusable components.",
+    "audience": [
+      "student",
+      "developer"
+    ],
+    "modules": [
+      {
+        "title": "Advanced React Patterns Module",
+        "topics": [
+          "Components",
+          "Best Practices"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 74,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Design Systems Mastery 98",
+    "description": "Learn the latest techniques for scalable web apps.",
+    "audience": [
+      "normal",
+      "developer"
+    ],
+    "modules": [
+      {
+        "title": "Advanced React Patterns Module",
+        "topics": [
+          "Performance",
+          "Optimization"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 31,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Web Performance Optimization 99",
+    "description": "Deep dive into modern development workflows.",
+    "audience": [
+      "normal"
+    ],
+    "modules": [
+      {
+        "title": "Fullstack Development Module",
+        "topics": [
+          "Design Patterns",
+          "Testing"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 32,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "UI/UX Fundamentals 100",
+    "description": "Learn the latest techniques for scalable web apps.",
+    "audience": [
+      "developer"
+    ],
+    "modules": [
+      {
+        "title": "Design Systems Mastery Module",
+        "topics": [
+          "Performance",
+          "Optimization"
+        ],
+        "classes": [
+          {
+            "title": "Tokens in Practice",
+            "duration": 62,
+            "recordingUrl": "https://www.youtube.com/watch?v=azXi9_hOgmk"
+          }
+        ]
+      }
+    ]
+  }
+]

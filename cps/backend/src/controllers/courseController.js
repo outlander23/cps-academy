@@ -15,7 +15,7 @@ export const listCourses = catchAsync(async (req, res) => {
   const role = req.user.role;
 
   const baseQuery = Course.find({ audience: role });
-
+  const tmp = await Course.find({ audience: role });
   const features = new APIFeatures(baseQuery, req.query, [])
     .filter()
     .sort()
@@ -27,7 +27,7 @@ export const listCourses = catchAsync(async (req, res) => {
   res.json({
     page: req.query.page * 1 || 1,
     limit: req.query.limit * 1 || 10,
-    count: courses.length,
+    count: tmp.length,
     courses: courses.map((c) => ({
       id: c.id,
       title: c.title,
